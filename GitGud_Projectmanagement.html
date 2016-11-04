@@ -15,11 +15,15 @@
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
 
-</script><tw-passagedata pid="1" name="Ein neuer Projektmanager" tags="" position="491,37">Hallo Kevin,
+
+
+</script><tw-passagedata pid="1" name="Ein neuer Projektmanager" tags="" position="276,34">Hallo Kevin,
 
 glückwunsch zu deinem abgeschlossenenen Informatikstudium. Jetzt hast du auch noch das Trainee Programm abgeschlossen.
 Jetzt gehts los. Dir wird die Planstelle in der It-Abteilung des Unternehmens angeboten.
@@ -27,10 +31,12 @@ Jetzt gehts los. Dir wird die Planstelle in der It-Abteilung des Unternehmens an
 [[Du lehnst ab und genießt dein Leben| Ende]]
 
 [[Du nimmst die Stelle an und stellst dich der Herausforderung. Guter Kevin!|Eine neue Stelle, ein neues Projekt]]</tw-passagedata>
-<tw-passagedata pid="2" name=" Ende" tags="" position="93,331">Du hast die richtige Wahl getroffen.
+<tw-passagedata pid="2" name=" Ende" tags="" position="810,379">Du hast die richtige Wahl getroffen.
 Gibst dir keinen Stress und lehnst dich zurück.
 Danke Sozialstaat! </tw-passagedata>
-<tw-passagedata pid="3" name="Eine neue Stelle, ein neues Projekt" tags="" position="480,216">Es geht also los. 
+<tw-passagedata pid="3" name="Eine neue Stelle, ein neues Projekt" tags="" position="278,193">(set: $playerpoints to 0)
+
+Es geht also los. 
 Dein Vorgesetzter, Justin, hat heute seinen mintgrünen Pollunder an. Er erklärt dir die flache Firmenstruktur und übergibt dir auch den ersten Projektauftrag; 
 
 &quot;Mensch Kevin, ich wollte da doch schon lange mal unsere Kunden-Stammdaten aus unserer Excel Liste ins Intranet bringen. Sollte ja nicht so schwer sein. Ich hab da so ein open Source Tool, da schicke ich dir mal einen Link. 
@@ -40,21 +46,88 @@ In eurem Warenwirtschaftssystem stehen im Forecast immernoch grüne Zahlen. Da i
 
 Du schaust in deinem [[Postfach-&gt; Du findest nichts. ]] nach dem Link. Justin hat das sicher schon geschickt.
 
-Du schaust auf der [[Chip.de-&gt; Teurer Server]] Bestenliste nach &quot;Top Server 2016&quot;  und bestellst den besten. Damit ist der Chef zufrieden und der Rest wird auf jeden Fall funktionieren.
+Du schaust auf der [[Chip.de-&gt;Schnelle Recherche]] Bestenliste nach &quot;Top Server 2016&quot;  und bestellst den besten. Damit ist der Chef zufrieden und der Rest wird auf jeden Fall funktionieren.
 
 Du schreibst eine [[Rundmail-&gt;Hilfestellung]] an die ganze Abteilung und fragst nach Hilfestellung. Es hat doch bestimmt jemand Zeit für einen neuen Kollegen. </tw-passagedata>
-<tw-passagedata pid="4" name=" Du findest nichts. " tags="" position="310,411">Das wars für heute. Du [[wartest-&gt;Justin kommt ]]  auf die E-Mail. Justin hat das bestimmt nicht vergessen.
+<tw-passagedata pid="4" name=" Du findest nichts. " tags="" position="76,349">(set: $playerpoints to it +1)
+
+Das wars für heute. Du [[wartest-&gt; Justin sauer ]]  auf die E-Mail. Justin hat das bestimmt nicht vergessen.
 
 Keine E-Mail. Vielleicht schickst du doch eine [[ Rundmail -&gt;Hilfestellung]]  an die Abteilung. Da wird doch jemand Zeit haben!</tw-passagedata>
-<tw-passagedata pid="5" name=" Teurer Server" tags="" position="557,472">Doppelklick auf diesen Absatz zum Bearbeiten.</tw-passagedata>
-<tw-passagedata pid="6" name="Hilfestellung" tags="" position="801,274">Die Kommunikationskultur ist anscheinend nicht sehr ausgeprägt.
+<tw-passagedata pid="5" name=" Teurer Server" tags="" position="183.33333333333334,836.6666666666667">Du findest DEN Server.
+
+Der SuperHost3000 ist topaktuell und für alles geeignet!
+
+Der Preis verunsichert dich zuerst, aber als du die Bestellung anlegst und im Forecast jetzt schwarze Zahlen stehen hast du ein besseres Gefühl. Das ist der [[neue Server-&gt;Neuer Server zu Teuer]] bestimmt wert!</tw-passagedata>
+<tw-passagedata pid="6" name="Hilfestellung" tags="" position="646.6666666666667,391.6666666666667">(set: $playerpoints to it +3)
+
+Die Kommunikationskultur ist anscheinend nicht sehr ausgeprägt.
 Dennoch kommt nach einigen nett gemeinten Antworten von den amerikanischen Kollegen Udo auf dich zu.
 Udo ist dem Projekt schon oftmals gekonnt ausgewichen. Dennoch ist er anscheinend der einzige, der in etwa eine Vorstellung davon hat, was Justin sich vorstellt.
 
 Udo rät dir, dich weiter zu [[informieren-&gt;Information einholen]] und eine Anforderungsliste zu schreiben.
 
-Wissend, dass das eine längere Aufgabe ist, bestellst du doch den ersten Platz von [[Chip.de-&gt; Teurer Server]].</tw-passagedata>
-<tw-passagedata pid="7" name="Information einholen" tags="" position="801,424">Doppelklick auf diesen Absatz zum Bearbeiten.</tw-passagedata>
+Wissend, dass das eine längere Aufgabe ist, bestellst du doch den ersten Platz von [[Chip.de-&gt;Schnelle Recherche]].
+</tw-passagedata>
+<tw-passagedata pid="7" name="Information einholen" tags="" position="563.3333333333334,846.6666666666667">(set: $playerpoints to it +3)
+
+Auf den Rat von Udo hin hälst du erst mal den Ball flach.
+Schließlich bist du neu und willst nicht von Beginn an schlechte Entscheidungen aufgrund von fehlenden Informationen treffen.
+
+Nach eingängiger Recherche entscheidest du dich für einen Server im mittleren Preissegment mit akzeptabler Performance. 
+Aufgrund der längeren Recherche und Lieferzeiten wird der Server später als geplant ankommen. 
+Somit ist die Zeitplanung für das Projekt jetzt schon verschoben.
+
+Trotzdem muss es weiter gehen. Nachdem die Bestellung sich als so schwierig erwiesen hat, bist du verunsichert. Bevor du weitere Schritte einleitest, planst du ein [[Meeting mit Justin-&gt; Meeting mit Justin]] um mehr Informationen zu dem ganzen Projekt einzuholen.</tw-passagedata>
+<tw-passagedata pid="8" name=" Justin sauer " tags="" position="73.33333333333334,515">(set: $playerpoints to it -1)
+
+Du siehst deinen Chef Justin erst am nächsten Tag wieder und will Ergebnisse sehen. 
+Nachdem du keinerlei Fortschritte vorzeigen kannst ist er nicht sonderlich erfreut: &quot;Noch keine Bestellung? Das kann doch nicht sein! Ich will Ergebnisse!&quot;
+Auf deine halbgaren Erklärungsversuche geht er gar nicht erst ein. Von der versprochenen E-Mail will er nichts gewusst haben.
+
+Sieht so aus als ob du dich nicht wirklich auf die Aussagen deines Chefs Justin verlassen kannst. 
+
+Dann [[recherchierst-&gt;Schnelle Recherche]] du doch lieber auf eigene Faust.
+
+Egal. Damit musst du jetzt klar kommen. Du bist gewissenhaft und willst jetzt nichts überstürzen. Dann frag ich doch jemand [[anderen-&gt;Information einholen]].
+
+</tw-passagedata>
+<tw-passagedata pid="9" name="Billiger Server" tags="" position="400,840">Du bestellst den Server, freust dich über die immer noch grünen Zahlen im Forecast und [[erwartest -&gt; Neuer Server zu schwach]] das Lob von deinem Chef Justin.</tw-passagedata>
+<tw-passagedata pid="10" name="Schnelle Recherche" tags="" position="303,483">(set: $playerpoints to it -1)
+
+Auf der Chip.de Bestenliste, die ja wie jeder weiß die beste Quelle für Hardware-Vergleiche aller Art ist, findest du eine gute Aufstellung über erhältiche Server.
+
+Du sortierst nach [[Wertung -&gt; Teurer Server]] und nimmst den obersten. Budget ist nicht so wichtig. Fakten schaffen!
+
+Du sortierst nach [[Preis -&gt;Billiger Server]] und nimmst den untersten. Leistung ist nicht so wichtig. Fakten schaffen!</tw-passagedata>
+<tw-passagedata pid="11" name="Neuer Server zu Teuer" tags="" position="181.66666666666669,1011.6666666666667">Als Justin die Bestellung für die Hardware sieht nimmt sein Gesicht die mintgrüne Farbe seines Pollunders an.
+Das wars dann wohl mit Weihnachtsgeld dieses Jahr.
+Viel Budget bleibt also für Programmierungen nichtr übrig.
+
+Trotzdem muss es weiter gehen. Nachdem die Bestellung sich als so schwierig erwiesen hat, bist du verunsichert. Bevor du weitere Schritte einleitest, planst du ein [[Meeting mit Justin-&gt; Meeting mit Justin]] um mehr Informationen zu dem ganzen Projekt einzuholen.</tw-passagedata>
+<tw-passagedata pid="12" name=" Meeting mit Justin" tags="" position="393.33333333333337,1178.3333333333335">Obwohl du einen Termin mit deinem Chef Justin vereinbart hast und in euren beiden Kalendern eingetragen hast, wirst du wieder einmal versetzt. 
+
+Du bist aber abhängig von den Informationen. Nachdem die Bestellung schon so holprig verlaufen ist willst du aber unbedingt Rücksprache halten und sitchfeste Fakten, auf denen du aufbauen kannst.
+
+Nachdem jetzt schon mehrere Treffen geplatzt sind, erarbeitest du einen Fragenkatalog. 
+Mit diesem erwischst du ihn spontan auf dem Gang.
+
+Justin: &quot;Das sind genau die richtigen Fragen, die Sie stellen. Ich denke, dass ich Ihnen diese jetzt ad hoc beantworten könnte. Aber ich hab doch Sie als klugen Kopf eingestellt. Sie sind doch der Projektleiter und an dem Thema doch viel näher dran als ich. Ihnen traue ich es ohne weiteres zu, mir zu jeder Ihrer Fragen zwei drei gute Vorschläge auszuarbeiten, aus denen ich dann auswählen werde.&quot;
+
+Als Projektleiter übernimmst du natürlich gerne diese [[Verantwortung-&gt;Verantwortung übernehmen]] und definierst Vorgaben nach deinen Vorstellungen.
+
+Das kanns ja nicht sein. Du musst doch nicht seine Arbeit auch noch machen. Außerdem liegt das gar nicht in deinem Verantwortungsbereich. Du weigerst dich das zu übernehmen und bleibst [[hartnäckig-&gt; Hartnäckig]].</tw-passagedata>
+<tw-passagedata pid="13" name=" Neuer Server zu schwach" tags="" position="398.33333333333337,1015">Als du ganz stolz den neuen Server von der It aufsetzen lässt, kommen die ersten Probleme auf. Scheint nicht das performanteste Modell zu sein. Das Fluchen des Admins bekommt auch dein Chef Justin mit. Natürlich ist er sauer. 
+
+Das Budget ist zwar noch im Rahmen, jedoch wird die Entwicklung auf dieser Basis nicht einfach.
+
+Trotzdem muss es weiter gehen. Nachdem die Bestellung sich als so schwierig erwiesen hat, bist du verunsichert. Bevor du weitere Schritte einleitest, planst du ein [[Meeting mit Justin-&gt; Meeting mit Justin]] um mehr Informationen zu dem ganzen Projekt einzuholen.</tw-passagedata>
+<tw-passagedata pid="14" name="Verantwortung übernehmen" tags="" position="203.33333333333334,1386.6666666666667">(set: $playerpoints to it -1)
+
+Also gut. Dann eben auf eigene Faust. </tw-passagedata>
+<tw-passagedata pid="15" name=" Hartnäckig" tags="" position="530,1378.3333333333335">(set: $playerpoints to it +3)
+
+Du bleibst hartnäckig und setzt einen neuen Termin an. Diesen kann er nicht absagen, du hast klugerweise seinen Vorgestetzten in cc gesetzt. Der Betreff lautet Aussagekräftig &quot;Letzte Chance auf einen guten Projektstart.&quot;</tw-passagedata>
 </tw-storydata>
 
 
